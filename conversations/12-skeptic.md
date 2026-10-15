@@ -33,6 +33,8 @@
 
 **P:** Tried their signals for a few weeks. Lost a bit more. Mostly lost my confidence, honestly.
 
+> [FRAME] continues
+
 **S:** Fair enough to be careful after that. Cool, just to give you some insight into our application process, it's two steps. The first step is this call. My goal here is to get an understanding of where you're at, some of your goals and see if we can actually help you. If by the end of the call I feel like that's the case, I'll walk you through the next stage, cool?
 
 **P:** Go on then.

@@ -23,6 +23,8 @@
 
 **P:** Four figures. Right. Okay.
 
+> [FRAME] continues
+
 **S:** Cool, just to give you some insight into our application process, it's two steps. The first step is this call. My goal here is to get an understanding of where you're at, some of your goals and see if we can actually help you. If by the end of the call I feel like that's the case, I'll walk you through the next stage, cool?
 
 **P:** Yeah, fine. Go.
@@ -77,7 +79,7 @@
 
 > [CURRENT L4] Pain in his words: "counting dollars by Thursday", "eating toast", "mates buying places". One feeling (behind), one cost (a third of his pay in rent).
 
-**P:** Why are you asking about all this? You said you wanted to know where I'm at.
+**P:** Why are you asking about all this? You said this was about where I'm at.
 
 **S:** I'm not asking just for the sake of asking. The better I understand you, the better I can help, like a personal trainer would.
 
