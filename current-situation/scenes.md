@@ -7,7 +7,7 @@
 ### T1 · Night-shift nurse, UK
 S: Okay, so tell me man, what had you interested in trading in the first place?
 P: Money, mostly.
-S: Mostly? What's the rest?
+S: Mostly. What's the rest?
 P: Time. I work nights.
 S: [L2] What do you mean, time?
 P: I sleep when everyone's up. [L3]
