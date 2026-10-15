@@ -65,6 +65,10 @@
 
 **P:** Her sugar, her knees. She needs someone around. Appointments, medicine, that stuff.
 
+**S:** How often are the appointments?
+
+**P:** Twice a month, sometimes more. Plus the pharmacy.
+
 **S:** Who does that when you're on shift?
 
 **P:** Me, when I can. Or a neighbour. Or she waits. I don't love that.
@@ -100,6 +104,18 @@
 **S:** Is it more tiring, or more lonely?
 
 **P:** Tired. Mostly tired. Lonely a bit, but I don't have the time to notice it.
+
+**S:** How long has it been like this?
+
+**P:** Since I became team lead. Three years? Four.
+
+**S:** Since you became team lead.
+
+**P:** Yeah. More money, worse hours. Everyone said congratulations. I said thanks.
+
+**S:** What did your mum say?
+
+**P:** She said don't worry about me. Which means worry.
 
 > [CURRENT L5] Exit test met. Her words: stuck on shifts, no time for her mum or herself, tired. Cost: missed the appointment, friends gone. Stop digging.
 

@@ -101,6 +101,12 @@
 
 **P:** Saw the ad.
 
+**S:** What about the ad caught your eye?
+
+**P:** It said you can make money from your phone. Lol.
+
+> [WHY THIS LINE] Not quite what the ad says, and not worth correcting. Take the answer and move on.
+
 > [FIN] Tight answers all the way. Keep the ladder as it is.
 
 **S:** What would you want to be making every month from trading, to make it worth your time?
@@ -131,7 +137,11 @@
 
 **P:** Ok. Cool.
 
-**S:** What's the best email to send them to?
+**S:** Anything you'd want the resources to cover?
+
+**P:** Idk. Just how it works.
+
+**S:** Got it. What's the best email to send them to?
 
 **P:** kyle dot b at example dot com.
 
@@ -146,6 +156,8 @@ Layers reached L2 (stayed at L1-L2, accepted) · exit test met: no, and that is 
 - Three tries only: an echo, a guess, then two options and a fact. After "it's fine" the setter stops and moves on. A fourth question would have been pressure.
 - "Why do you need to know all this?" gets the verbatim reason line, flat. His joke about rent is not followed up.
 - The DQ line is the same as every other call. No lecture, no price, no promise. The resources and the follow-up date are the whole offer.
+- Nothing on this call was a failure of technique. Some leads give one word because they are not ready, and the numbers at the ladder confirmed it. The setter spent about three minutes on CURRENT, not twelve, and that is the right amount here.
+- The setter never tried to make him "feel" something to get past the stall. A guarded 22-year-old who is asked about his feelings by a stranger will hang up, and he would be right to.
 
 ## If they had said X instead
 
@@ -160,8 +172,13 @@ Layers reached L2 (stayed at L1-L2, accepted) · exit test met: no, and that is 
 **P:** Rent, kinda.
 **S:** Got it man. Right now it wouldn't make sense to book you. I'll send you some resources and we pick this up in a month or two.
 
-**X3. He asks "how much is it?"**
+**X3. He asks "how much is it?" before the ladder.**
 **S:** It's a four-figure investment, depending on the program, but we can't even know if we can help you yet. That's what the call with $CLOSER is for.
+
+**X4. He says nothing for a few seconds after the first question.**
+**P:** …
+**S:** No rush. Is it more that money's tight, or that you want to get ahead?
+(A two-option question is easier to answer than an open one. If he still says "idk", accept it and go to RECAP.)
 
 ## Worse version
 
