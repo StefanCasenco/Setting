@@ -19,6 +19,8 @@
 
 > [WHY THIS LINE] He gave a time limit. The frame is the same as always; the call simply stays inside his ten minutes.
 
+> [FRAME] continues
+
 **S:** Cool, just to give you some insight into our application process, it's two steps. The first step is this call. My goal here is to get an understanding of where you're at, some of your goals and see if we can actually help you. If by the end of the call I feel like that's the case, I'll walk you through the next stage, cool?
 
 **P:** Yeah, fine.
