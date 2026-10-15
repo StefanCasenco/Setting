@@ -5,10 +5,10 @@
 - [x] 1 Script + READ-ALOUD
 - [~] 2 SOP: fresh rewrite done, but MERGE-marked sections still need the v1 SOP (not accessible)
 - [x] 3 CURRENT toolkit
-- [ ] 4 Conversations Tier 1 (16)
-- [ ] 5 Conversations Tier 2 (12)
+- [x] 4 Conversations Tier 1 (16)
+- [x] 5 Conversations Tier 2 (12)
 - [x] 6 Drills
-- [ ] 7 README + QA + PR
+- [~] 7 Root README done, lint clean, brief moved to archive/brief-v2.md; no PR (user asked to merge straight to main); full 3-call read-through only partly done (spot-checked 21)
 
 ## Deviations
 - The brief targets `StefanCasenco/Appointment-Setting` (old SOP, PDF, 50 roleplays). This session is scoped to `StefanCasenco/Setting`, which only held the brief and the script. Attaching Appointment-Setting was denied by the permission classifier, so nothing was archived: `archive/v1-*` are empty placeholders, and the tag was made on this repo's main.
@@ -22,3 +22,7 @@ Q1 fixed order · Q2 8-12 min live, CURRENT 4-6 · Q3 Atefur taster · Q4 generi
 - Run Phase 0/2 against Appointment-Setting (move old files to `archive/`, rewrite the SOP from the real old SOP), or grant access to that repo.
 - Confirm every FLAG in SETTING-SCRIPT.md.
 - Add real surnames to `tools/pii_blocklist.txt` (gitignored).
+
+- Confirm `$UNSUPPORTED_REGIONS` and the under-18 wording used in calls 24-25 (placeholders, not company policy).
+- Call 04's share of CURRENT is near the 35% floor; 27 and 28 are short by design.
+- Merged to main at the user's request (brief said PR only).
