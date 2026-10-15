@@ -78,6 +78,22 @@
 
 > [CURRENT L4] He chose the practical hardship. That is enough. One more question, then leave it.
 
+**S:** What do you do on a day off, when you get one?
+
+**P:** Sleep. Fix the scooter. Call my mother.
+
+**S:** How is she?
+
+**P:** Okay. She says don't worry. Then she asks if I ate.
+
+**S:** How long have you been on the longer days?
+
+**P:** Since the funeral, maybe. Eight months, nine.
+
+**S:** Eight, nine months of that.
+
+**P:** Yes. It becomes normal. That is the problem.
+
 **S:** And at home, how is it with all that?
 
 **P:** Okay. My partner helps. We just don't have much time together, I'm always on the scooter.

@@ -156,7 +156,7 @@ Layers reached L2 (stayed at L1-L2, accepted) · exit test met: no, and that is 
 - Three tries only: an echo, a guess, then two options and a fact. After "it's fine" the setter stops and moves on. A fourth question would have been pressure.
 - "Why do you need to know all this?" gets the verbatim reason line, flat. His joke about rent is not followed up.
 - The DQ line is the same as every other call. No lecture, no price, no promise. The resources and the follow-up date are the whole offer.
-- Nothing on this call was a failure of technique. Some leads give one word because they are not ready, and the numbers at the ladder confirmed it. The setter spent about three minutes on CURRENT, not twelve, and that is the right amount here.
+- Nothing on this call was a failure of technique. Some leads give one word because they are not ready, and the numbers at the ladder confirmed it. The setter spent about three minutes on CURRENT, not twelve, and that is the right amount here. Short calls with guarded leads are normal, and a clean exit keeps the door open for later.
 - The setter never tried to make him "feel" something to get past the stall. A guarded 22-year-old who is asked about his feelings by a stranger will hang up, and he would be right to.
 
 ## If they had said X instead

@@ -32,13 +32,13 @@
 
 **S:** Sean, let me jump in, because that's a lot. Back up for a second. What was it like when the restaurant closed?
 
-**P:** Ah, you get on with it. Closed on a Sunday, cleared out the Monday.
+**P:** Ah, you get on with it. Cleared out the Monday.
 
 > [CURRENT L2] He's covering with a joke and a scene. Let him finish.
 
 **S:** Cleared out the Monday.
 
-**P:** Fryers into a van, in the car park. Funny, the last night was packed.
+**P:** Fryers into a van. Funny, the last night was packed.
 
 **S:** The last night was packed.
 
@@ -52,7 +52,7 @@
 
 **S:** Not how it was meant to be?
 
-**P:** I'm the one who's meant to be bringing it in. That's the deal.
+**P:** I'm meant to be bringing it in. That's the deal.
 
 > [CURRENT L3]
 
@@ -62,7 +62,7 @@
 
 **S:** What does a normal week look like now?
 
-**P:** Up at seven, kids to school, a few hours on the laptop applying for things. Pick-ups. Dinner on, so she's got something when she walks in at eight.
+**P:** Up at seven, school run, laptop applying for things. Dinner on for when she's in at eight.
 
 **S:** Walk in at eight, from a twelve-hour shift?
 
@@ -77,6 +77,18 @@
 **S:** Kind?
 
 **P:** It's what you say to someone who's down.
+
+**S:** Do the kids know how it's been?
+
+**P:** They know Dad's home. They think it's brilliant.
+
+**S:** What do you make of that?
+
+**P:** Part of me loves it. Part of me can't look at it.
+
+**S:** What did you do that first week after?
+
+**P:** Cleaned the house top to bottom. Twice.
 
 > [CURRENT L4]
 
