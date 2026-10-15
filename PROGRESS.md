@@ -7,7 +7,7 @@
 - [x] 3 CURRENT toolkit
 - [ ] 4 Conversations Tier 1 (16)
 - [ ] 5 Conversations Tier 2 (12)
-- [ ] 6 Drills
+- [x] 6 Drills
 - [ ] 7 README + QA + PR
 
 ## Deviations
