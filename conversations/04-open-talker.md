@@ -25,58 +25,80 @@
 
 **S:** Okay, so tell me man, like… out of all the ways to make money, what had you interested in trading in the first place?
 
-**P:** Ah, look, I had a restaurant for nine years out in Rathmines, and it went under last spring, rent and the energy bills, you know yourself. Now the wife's back working full-time in the hospital, I'm doing the school runs, sending out CVs that go nowhere, and a mate said have a look at trading, so here I am.
+**P:** Ah, look, I had a restaurant nine years out in Rathmines, went under last spring, rent and the energy bills, you know yourself. Now the wife's back full-time in the hospital, I do the school runs, send out CVs that go nowhere, and a mate said have a look at trading, so here I am, God help me.
 
 > [CURRENT L1] One allowed burst, and it has everything in it. Don't summarise it. Find the one real sentence.
 > [WHY THIS LINE] A warm interruption: acknowledge the story before you steer, so he doesn't feel cut off.
 
 **S:** Sean, let me jump in, because that's a lot. Back up for a second. What was it like when the restaurant closed?
 
-**P:** Ah, you get on with it. Closed on a Sunday, cleared out the Monday. Funny enough, the last night was packed, the way it always is.
+**P:** Ah, you get on with it. Closed on a Sunday, cleared out the Monday.
 
 > [CURRENT L2] He's covering with a joke and a scene. Let him finish.
 
+**S:** Cleared out the Monday.
+
+**P:** Fryers into a van, in the car park. Funny, the last night was packed.
+
 **S:** The last night was packed.
 
-**P:** It was. Full house. And the next morning I'm in the car park putting the fryers in a van.
+**P:** Full house. Always the way.
 
 **S:** And then the wife went back to work.
 
-**P:** She did. Which is grand, no problem. Except that's not how it was meant to be.
+**P:** She did. Grand. Except that's not how it was meant to be.
 
 > [CURRENT L2] "Not how it was meant to be" is the real sentence. Echo it, short.
 
 **S:** Not how it was meant to be?
 
-**P:** I'm the one who's meant to be bringing it in. That's the deal. And I'm doing the school run.
+**P:** I'm the one who's meant to be bringing it in. That's the deal.
 
 > [CURRENT L3]
 
+**S:** How long has it been like this?
+
+**P:** Seven months since we closed. Feels like seven years.
+
 **S:** What does a normal week look like now?
 
-**P:** Up at seven, kids to school, a few hours on the laptop, applying for things. Pick-ups. Dinner on, so she's got something when she walks in at eight.
+**P:** Up at seven, kids to school, a few hours on the laptop applying for things. Pick-ups. Dinner on, so she's got something when she walks in at eight.
 
 **S:** Walk in at eight, from a twelve-hour shift?
 
-**P:** Roughly, yeah. Though she'd say it's ten hours, to be fair, she's always telling me I exaggerate.
+**P:** Roughly, yeah. She'd say ten hours, she's always telling me I exaggerate.
 
 > [WHY THIS LINE] He gets the hours wrong and it doesn't matter. Don't correct it.
+
+**S:** What does your wife say about it?
+
+**P:** She says we're a team. Which is kind.
+
+**S:** Kind?
+
+**P:** It's what you say to someone who's down.
+
+> [CURRENT L4]
 
 **S:** What's the hardest part of that?
 
 **P:** Honestly? Her coming through the door, tired out, and me with dinner ready and nothing else to show.
 
-> [CURRENT L4] Silence. Don't comfort him.
-
 **S:** Okay.
 
-**P:** I used to be the one on my feet till midnight. Now I'm the one watching the clock for the school pick-up.
+> [WHY THIS LINE] Silence after "Okay". He volunteers the next line. Don't comfort him.
+
+**P:** I used to be the one on my feet till midnight. Now I'm watching the clock for the school pick-up.
 
 **S:** What does that do to you?
 
-**P:** Ah. I feel like I let them down, if I'm honest. The staff too. Fourteen of them, I had to let go.
+**P:** Ah. I feel like I let them down, if I'm honest. The staff too. Fourteen of them.
 
-> [CURRENT L5] Feeling: let them down. Cost: staff, his wife's hours, his own sense of himself. Exit test met. Stop here.
+**S:** Fourteen.
+
+**P:** Fourteen. I still know their kids' names.
+
+> [CURRENT L5] Feeling: let them down. Cost: the staff, his wife's hours, his own sense of himself. Exit test met. Stop here.
 
 > [RECAP]
 
