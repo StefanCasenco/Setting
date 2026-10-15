@@ -3,7 +3,7 @@
 ## Phases
 - [x] 0 Prep (tag `v1-old-script`, branch `script-v2`, tree skeleton)
 - [x] 1 Script + READ-ALOUD
-- [ ] 2 SOP rewrite — BLOCKED: old SOP not in this repo (see below)
+- [~] 2 SOP: fresh rewrite done, but MERGE-marked sections still need the v1 SOP (not accessible)
 - [x] 3 CURRENT toolkit
 - [ ] 4 Conversations Tier 1 (16)
 - [ ] 5 Conversations Tier 2 (12)
