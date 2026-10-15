@@ -83,6 +83,18 @@
 
 > [CURRENT L4] Pain in his words: "I nod, change the subject, feel rotten". One feeling (guilty, trapped). One cost (every Saturday).
 
+**S:** How long has he been saying that?
+
+**P:** Since I was about eighteen.
+
+**S:** Since eighteen.
+
+**P:** Aye. Seven years of "when you take over".
+
+**S:** What's it like when you get home on a Saturday night?
+
+**P:** Flat. Tea in front of the telly. Phone in my hand, looking up ecom stuff.
+
 **S:** How does ecom fit into that?
 
 **P:** If I had my own thing making money, I could say no, couldn't I? Without it being a fight.

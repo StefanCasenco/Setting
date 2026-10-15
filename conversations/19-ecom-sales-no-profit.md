@@ -65,6 +65,14 @@
 
 > [WHY THIS LINE] "Temporary" was said fast, like something he tells himself. Echo it, then ask about who else is in the picture.
 
+**S:** How long has it been temporary?
+
+**P:** Since the start. Eleven months.
+
+**S:** Eleven months.
+
+**P:** I know how that sounds.
+
 **S:** Who else is around while you do that?
 
 **P:** Why are you asking about that? I thought this was about the store.
@@ -88,6 +96,14 @@
 **S:** Where does that go if nothing changes?
 
 **P:** I need it to be worth it. It has to be worth it, or then what was it for.
+
+**S:** When did you last have a full weekend off?
+
+**P:** March, maybe. Lucía's birthday.
+
+**S:** March.
+
+**P:** Yes. Seven months, almost.
 
 > [CURRENT L5] One pass. "What was it for" is the cost. Exit test met, no more digging.
 

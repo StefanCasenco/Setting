@@ -61,6 +61,10 @@
 
 **P:** *(short laugh)* Scrolling. Ads, mostly. I get a lot of ads now.
 
+**S:** What's it like at home while you're sleeping?
+
+**P:** Quiet. Everyone tiptoes. I hate that they have to.
+
 **S:** What was it like when the store was going?
 
 **P:** Exciting, at first. I told my husband this was it. That we'd finally have a plan B.
@@ -91,7 +95,19 @@
 
 **P:** Orders sat for weeks. Customers emailed. I refunded most of them. Then I just stopped.
 
+**S:** What was that like, answering customers?
+
+**P:** Awful. I did emails at the nurses' station on my break.
+
 > [CURRENT L5] One pass on cost.
+
+**S:** How long have you been saying it's paused?
+
+**P:** Since the autumn. Almost a year.
+
+**S:** A year.
+
+**P:** It's a long time to say "paused".
 
 **S:** Where does that go if nothing changes?
 
