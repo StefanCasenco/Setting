@@ -17,6 +17,7 @@ You can say their pain **in their words**, with **one feeling** and **one cost**
 | `02-start.md` | The intent line, reading the first answer, going straight in |
 | `03-threads.md` | Short runs showing how to follow a thread, by what they say |
 | `04-stuck.md` | One-word answers, talkers, "why are you asking?", tactical-only, and the rest |
+| `roleplays/` | Ten full CURRENT runs, each with a breakdown of what to pick up on and why each question was chosen |
 | `05-practice.md` | The drills Atefur gave you |
 | `06-sources.md` | Where each rule came from (calls #1–#4), what's from Flavius, what was left out |
 
