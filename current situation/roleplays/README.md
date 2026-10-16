@@ -51,4 +51,4 @@ The money ladder (goal, how far, how much saved a month, "ish", usual or tight m
 | 19 | "I work nights. I basically never see my kids awake." |
 | 20 | "My customers keep asking for my sauce. I should be selling it." |
 
-**How they ended:** 13 qualified (some with flags), 5 not booked (02: not enough money, 05 and 20: the money is a safety net or payroll, 15: no capital, 06: no pain found), 2 more with partner or family flags noted for the closer.
+**How they ended:** 15 qualified (several with flags for the closer, like a partner who doesn't know or money that's partly spoken for), 5 not booked: 02 (not enough money), 15 (no capital), 05 and 20 (the money is a safety net or payroll), and 06 (no pain found).
