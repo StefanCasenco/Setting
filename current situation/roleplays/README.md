@@ -1,6 +1,6 @@
 # Roleplays: what a real CURRENT looks like
 
-Twenty calls: ten trading, ten ecom. Each one runs from the intent question through the money questions, the way a live setting call does.
+Twenty-five calls: fifteen trading, ten ecom. Each one runs from the intent question through the money questions, the way a live setting call does.
 
 ## What these are, and aren't
 - **Not word tracks.** The order and the wording change from call to call. Recap is sometimes skipped. Why-now is sometimes asked, sometimes already answered. The money questions come in a different order when the prospect has already said something. That's on purpose.
@@ -51,4 +51,18 @@ The money ladder (goal, how far, how much saved a month, "ish", usual or tight m
 | 19 | "I work nights. I basically never see my kids awake." |
 | 20 | "My customers keep asking for my sauce. I should be selling it." |
 
-**How they ended:** 15 qualified (several with flags for the closer, like a partner who doesn't know or money that's partly spoken for), 5 not booked: 02 (not enough money), 15 (no capital), 05 and 20 (the money is a safety net or payroll), and 06 (no pain found).
+**Trading, when the first answer is "I've seen so many people online make money, I want to do the same"**
+
+| # | First thing they said |
+|---|---|
+| 21 | "I've seen so many people online make money from trading, and I wanna do the same." |
+| 22 | "I've seen loads of people online making money, so I thought, why not." |
+| 23 | "Most are probably faking it, but some are real." |
+| 24 | "I wanna do the same, like my cousin." |
+| 25 | "A lot of women now. I want to do the same." |
+
+These five are the same shallow answer five different ways. In each one the picture they're copying turns out to be about something else: a leaderboard on a wall, a friend who left, a shop that closed, a dad's takeaway, a marriage nobody talks about. The method is the same each time. Ask about the person or the picture they named, then follow what comes out.
+
+**How the first twenty ended:** 15 qualified (several with flags for the closer, like a partner who doesn't know or money that's partly spoken for), 5 not booked: 02 (not enough money), 15 (no capital), 05 and 20 (the money is a safety net or payroll), and 06 (no pain found).
+
+**The five (21–25):** four qualified (21, 22, 24, 25, with family or partner flags in the last two) and one not booked (23: the money is borrowed or under a loan).
