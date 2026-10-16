@@ -1,6 +1,6 @@
 # Roleplays: running a proper CURRENT
 
-Ten full CURRENT sections, from the intent question to the moment the pain is clear (or you deliberately stop).
+Ten short CURRENT sections, plus one long, messier call (11) that runs all the way through financial qualification, from the intent question to the moment the pain is clear (or you deliberately stop).
 
 ## How to use them
 - **You don't know who you're talking to when you dial.** So the files are named after the **first thing the prospect said**, not a type. What it turned out to be, and how you could tell, is in the breakdown at the end.
@@ -9,7 +9,7 @@ Ten full CURRENT sections, from the intent question to the moment the pain is cl
 - **The default** in the breakdowns means the question you'd be tempted to ask from the framework's CURRENT: "what do you do work-wise? how do you feel about the job?"
 - These are examples of the principle, not scripts. The lines are invented; real prospects will say different things. The skill is the loop in `../01-method.md`.
 
-## The ten
+## The eleven
 
 | # | First thing they said | Offer |
 |---|---|---|
@@ -23,5 +23,6 @@ Ten full CURRENT sections, from the intent question to the moment the pain is cl
 | 08 | "Money." | trading |
 | 09 | "I've been trading six years, I know all this." | trading |
 | 10 | "Money's been a mess since the divorce." | trading |
+| 11 | A rambling first answer. **Longer, messier, human.** Runs from intent through financial qualification | trading |
 
 Format: `[SETTER]` and `[PROSPECT]`. Stage directions are in italics.
