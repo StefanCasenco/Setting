@@ -1,0 +1,315 @@
+1
+00:00:00,240 --> 00:00:03,200
+So, this is the framework I use for every conversation,
+
+2
+00:00:03,520 --> 00:00:06,080
+whether I'm in the DMs or I'm on the phone. And I want to
+
+3
+00:00:06,081 --> 00:00:09,360
+be clear: this isn't a script that you read off of or copy and
+
+4
+00:00:09,361 --> 00:00:13,360
+paste. It's a structure. And it means that no matter what the lead says,
+
+5
+00:00:13,680 --> 00:00:17,120
+you'll always know where you are in the conversation and where it needs to
+
+6
+00:00:17,121 --> 00:00:20,400
+go next. There are seven stages to this.
+
+7
+00:00:20,720 --> 00:00:23,680
+One is the opening, it's just to get them talking.
+
+8
+00:00:24,304 --> 00:00:26,624
+Two, I have a soft qualification step,
+
+9
+00:00:26,704 --> 00:00:29,824
+which is just finding out who they are and why they're here.
+
+10
+00:00:30,464 --> 00:00:32,704
+Three is their current situation.
+
+11
+00:00:33,024 --> 00:00:37,264
+Where are they right now? Four is going to be a goal.
+
+12
+00:00:37,584 --> 00:00:40,784
+Where do they want to be? What do they want to achieve?
+
+13
+00:00:41,104 --> 00:00:45,424
+Five is going to be roadblocks. What's actually stopping them from getting there?
+
+14
+00:00:45,584 --> 00:00:47,744
+What's actually stopping them from doing it themselves?
+
+15
+00:00:48,688 --> 00:00:51,488
+Six is going to be creating urgency.
+
+16
+00:00:51,808 --> 00:00:54,048
+How badly do they actually want to make a change,
+
+17
+00:00:54,128 --> 00:00:57,968
+and how soon do they want to do it? Seven is finally just going
+
+18
+00:00:57,969 --> 00:01:02,208
+to be the booking, presenting the call is the natural next step.
+
+19
+00:01:02,528 --> 00:01:06,448
+And running through all of these stages,
+
+20
+00:01:06,768 --> 00:01:09,248
+especially these discovery sections,
+
+21
+00:01:09,808 --> 00:01:11,888
+is going to be two philosophies.
+
+22
+00:01:12,352 --> 00:01:17,392
+Or formats, and that's going to be situation to impact and time frames.
+
+23
+00:01:17,712 --> 00:01:21,632
+We'll go into these deeper after the framework,
+
+24
+00:01:21,792 --> 00:01:24,352
+but keep them in the back of your mind this whole time.
+
+25
+00:01:24,672 --> 00:01:28,432
+Let's start with stage one: the opening.
+
+26
+00:01:29,072 --> 00:01:33,632
+So, the opening only has one real job: it's just to get them talking
+
+27
+00:01:33,633 --> 00:01:35,952
+about themselves as quickly as possible.
+
+28
+00:01:36,576 --> 00:01:38,896
+We don't want to have like long paragraphs,
+
+29
+00:01:38,976 --> 00:01:41,776
+or we don't want to be pitching the offer as the first message.
+
+30
+00:01:42,096 --> 00:01:46,656
+We also don't want to be chatting like a 13-year-old boy messaging
+
+31
+00:01:46,736 --> 00:01:48,976
+girl. No, hey, how are you?
+
+32
+00:01:49,296 --> 00:01:52,016
+Which gets you like a good thanks, you, or hey,
+
+33
+00:01:52,096 --> 00:01:54,976
+what are you up to? That's going to get you nowhere.
+
+34
+00:01:55,296 --> 00:01:58,496
+We want an open-ended question that tells us why they're here.
+
+35
+00:01:58,816 --> 00:02:01,040
+Their answer gives us. Their intent.
+
+36
+00:02:01,280 --> 00:02:03,520
+Are they curious? Are they serious?
+
+37
+00:02:03,760 --> 00:02:07,040
+Are they desperate for a change? Or are they just looking around?
+
+38
+00:02:07,360 --> 00:02:11,760
+You'd be surprised how much Lee tells you in their very first reply if
+
+39
+00:02:11,761 --> 00:02:15,760
+you ask the right questions. Here are a few of the replies,
+
+40
+00:02:16,000 --> 00:02:18,640
+a few of the openers I use. So,
+
+41
+00:02:18,800 --> 00:02:23,360
+hey Jordan, saw you opted into one of our forms.
+
+42
+00:02:23,600 --> 00:02:26,064
+What actually made You reach out? Or,
+
+43
+00:02:26,224 --> 00:02:28,304
+hey, Jordan, appreciate you reaching out.
+
+44
+00:02:28,544 --> 00:02:32,624
+Out of curiosity, what got you interested in trading?
+
+45
+00:02:33,584 --> 00:02:37,904
+Hey, Jordan, what's got you looking at trading at the moment?
+
+46
+00:02:38,224 --> 00:02:40,704
+Notice what all of these have in common.
+
+47
+00:02:40,944 --> 00:02:43,424
+They're short, they reference why they're messaging,
+
+48
+00:02:43,584 --> 00:02:47,584
+they're personalized to at least the extent of the name of the prospect,
+
+49
+00:02:47,904 --> 00:02:50,128
+and It doesn't feel random.
+
+50
+00:02:50,448 --> 00:02:54,448
+They end with an open-ended question that can't be answered yes or no.
+
+51
+00:02:54,768 --> 00:02:57,648
+A few rules I'd have for an opening is to keep it short.
+
+52
+00:02:57,808 --> 00:03:01,248
+It should read like a message from a real person that you'd send to
+
+53
+00:03:01,249 --> 00:03:03,568
+a friend, not a marking email.
+
+54
+00:03:03,888 --> 00:03:07,088
+Two, when we're first reaching out, we want to be asking just one question
+
+55
+00:03:07,089 --> 00:03:10,688
+at a time. If you bombard them with three questions all in one message,
+
+56
+00:03:10,848 --> 00:03:14,352
+they'll either not respond or they'll. Only going to answer one of the message,
+
+57
+00:03:14,512 --> 00:03:17,872
+like questions, and usually it's the least useful one.
+
+58
+00:03:18,432 --> 00:03:23,232
+I don't like asking binary yes or no questions at the start
+
+59
+00:03:23,233 --> 00:03:25,872
+of conversations. I have them here,
+
+60
+00:03:26,112 --> 00:03:28,272
+and you might get a good reply, right?
+
+61
+00:03:28,512 --> 00:03:30,992
+But you don't get as much intent off the bat.
+
+62
+00:03:31,312 --> 00:03:34,112
+If I ask you, Are you interested in making money online?
+
+63
+00:03:34,432 --> 00:03:37,856
+All you're gonna say is yeah. Bit of a dead end,
+
+64
+00:03:38,416 --> 00:03:40,496
+and then we have to ask what's got you interested.
+
+65
+00:03:40,736 --> 00:03:45,536
+When you can just jump straight into what got you interested in making money
+
+66
+00:03:45,537 --> 00:03:48,576
+off the bat, and you get the story straight away.
+
+67
+00:03:48,896 --> 00:03:51,296
+We want to mirror their energy.
+
+68
+00:03:51,456 --> 00:03:54,816
+If they reply with one line, don't try and send them a message back.
+
+69
+00:03:55,136 --> 00:03:57,216
+If they send a long, detailed message,
+
+70
+00:03:57,376 --> 00:04:00,336
+you can start giving them a bit more. Here's a quick example of.
+
+71
+00:04:00,720 --> 00:04:03,360
+What good looks like. So let's say the seller says,
+
+72
+00:04:03,520 --> 00:04:05,760
+Hey Jake, saw you grabbed a free guide.
+
+73
+00:04:06,000 --> 00:04:08,400
+What made you reach out? The lead says,
+
+74
+00:04:08,640 --> 00:04:12,640
+Honestly, I'm sick of my job. I've been watching Jordan's videos for a while
+
+75
+00:04:12,641 --> 00:04:15,440
+now and I wanted to get into trading properly.
+
+76
+00:04:16,320 --> 00:04:19,040
+Look how much you've learned just from asking one question.
+
+77
+00:04:19,200 --> 00:04:21,520
+He's unhappy at work, he's been watching for a while,
+
+78
+00:04:21,840 --> 00:04:24,080
+so he's warm and he wants to take it seriously.
+
+79
+00:04:24,704 --> 00:04:28,544
+Now that we've gotten 10, we can move into the next stage.
