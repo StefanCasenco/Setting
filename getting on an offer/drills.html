@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setter Drills</title>
+<style>
+:root{--bg:#f6f5f2;--card:#ffffff;--ink:#1d1d1f;--muted:#6b6b70;--line:#e3e1dc;--accent:#2f5bd3;--good:#1f8a4c;--bad:#b3261e;--chip:#eeece7}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121214;--card:#1c1c1f;--ink:#f1f1f3;--muted:#a0a0a8;--line:#2c2c31;--accent:#7c9bff;--good:#4cc27e;--bad:#ff7a70;--chip:#26262b}}
+:root[data-theme="dark"]{--bg:#121214;--card:#1c1c1f;--ink:#f1f1f3;--muted:#a0a0a8;--line:#2c2c31;--accent:#7c9bff;--good:#4cc27e;--bad:#ff7a70;--chip:#26262b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:680px;margin:0 auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+h1{font-size:18px;margin:0}
+.muted{color:var(--muted);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-height:260px}
+.stage{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-weight:600}
+.ctx{font-size:13px;color:var(--muted);margin:4px 0 12px}
+.line{font-size:21px;line-height:1.35;font-weight:600;margin:6px 0 14px}
+.say{font-size:14px;color:var(--muted);margin-bottom:10px}
+.ans{display:none;border-top:1px solid var(--line);padding-top:12px;margin-top:6px}
+.ans.show{display:block}
+.ans h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:10px 0 6px;color:var(--good)}
+.ans h3.no{color:var(--bad)}
+.ans p{margin:4px 0 8px}
+.why{font-size:13px;color:var(--muted)}
+.btns{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+button.b{flex:1;min-width:110px;border:0;border-radius:10px;padding:12px;font-size:15px;font-weight:600;cursor:pointer;background:var(--chip);color:var(--ink)}
+button.p{background:var(--accent);color:#fff}
+button.g{background:var(--good);color:#fff}
+button.r{background:var(--bad);color:#fff}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:10px 0 4px}
+.bar>i{display:block;height:100%;background:var(--good);width:0}
+.tog{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer}
+footer{margin-top:16px;font-size:12px;color:var(--muted)}
+kbd{border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div><h1>Setter Drills</h1><div class="muted" id="count"></div></div>
+  <button class="tog" id="theme" aria-label="Toggle theme">◐</button>
+</header>
+<div class="chips" id="chips"></div>
+<div class="bar"><i id="prog"></i></div>
+<div class="muted" id="score"></div>
+<div class="card" id="card">
+  <div class="stage" id="stage"></div>
+  <div class="ctx" id="ctx"></div>
+  <div class="line" id="line"></div>
+  <div class="say">Say your answer <b>out loud</b> before you reveal.</div>
+  <div class="ans" id="ans"></div>
+  <div class="btns" id="btns"></div>
+</div>
+<footer>Keys: <kbd>Space</kbd> reveal · <kbd>1</kbd> nailed it · <kbd>2</kbd> again · <kbd>→</kbd> skip. Progress is saved in this browser only. Built from Scott's course, the Syndicate call, Atefur #1–5 and your own roleplays.</footer>
+</div>
+<script>
+const D=[
+// [category, stage, context, prospect line, [good answers], don't, why]
+["Openers","OPEN","They booked a 3pm slot (triage).","(phone rings) Hello?",["Hey Marcus, how you doing, man? It's Stefan from Ray's team. I've got you down for 3 about trading. What got you booking in?"],"Heeey… is this Marcus? Are you free for a quick 5 to 10 minute chat?","Scott: familiar tone, context, one open question. No permission, no farming yeses."],
+["Openers","OPEN","New form, filled out 3 minutes ago.","Yeah, who's this?",["Hey, it's Stefan from Ray's team. You literally just put your info in about trading. What made you fill it out?"],"So, um, like, I guess, I'm calling because you, like, filled a form?","Speed to lead. The reason they filled it in is still fresh, so ask for it."],
+["Openers","OPEN","Downloaded a free guide 4 days ago.","Uh, maybe? I download a lot of stuff.",["Ha, fair, you're not the only one. Just so I don't waste your time, is trading something you're actually looking to get into, or more just having a look around right now?"],"Oh, okay, well, can I tell you about our program?","Scott's binary is on purpose here. It makes a cold lead pick a side."],
+["Openers","OPEN","Old lead from 6 months ago.","Who is this?",["Hey, it's Stefan from Leo's team. Bit of a random one: you reached out back in May about starting a store and never got a proper call. Where are you at with it now?"],"Hi, we're following up on your interest in our services.","Admitting it's random lowers the guard on an old lead."],
+["Openers","OPEN","Registered for the webinar, didn't show.","Oh no, I didn't watch it, sorry.",["Ha, don't be sorry, half the people who sign up don't make it. What happened Tuesday?"],"Okay, well, you missed a lot of valuable information.","Take the guilt away. 'What happened?' is an easy question, and it's often where the pain is."],
+["Openers","OPEN","He calls back a missed call.","Somebody called me from this number?",["Hey, yeah, that was me, thanks for calling back. It's Stefan from Ray Thompson's team, the trading guy. You filled out an application yesterday. Ring a bell?"],"Who's this?","Callbacks start confused. Give your name, the owner's full name, what they filled out and when."],
+["Openers","OPEN","Paying member of the $99/month academy.","Hey, yeah, who's this?",["Hey Sam, it's Stefan from Luke's team. You joined the Academy about three weeks ago, so I'm doing your welcome call. How are you finding it so far?"],"Hi! I'm calling to tell you about our premium program.","Onboard first. They've paid, so they trust you. Find the gap before any upgrade."],
+
+["Vague","CURRENT","Intent question just asked.","I just want to make more money.",["Sure. What are you making right now, roughly?","…And how much would you need for this to be worth it? … What would that actually change for you?"],"Why do you want more money? … But why? … Okay, but why though?","Scott: change the angle, don't repeat 'why'. Current income, then target, then what it changes."],
+["Vague","CURRENT","After asking what's going on.","Everyone wants more money, right?",["Not everyone's filling out forms about it at 11pm. (laugh) What's specifically going on for you?"],"Haha, yeah, true.","Scott's 'not everyone' move, done lightly."],
+["Vague","CURRENT","Trading offer. You asked how the job is.","It's boring. Repetitive.",["Honestly, trading's repetitive too. Same charts every morning, a lot of days nothing happens. So knowing that, why do you actually want to change?"],"How so? … How come? … Any examples?","Scott's reframe takes 'boring' away. Now it has to be money, freedom or something real."],
+["Vague","CURRENT","You asked what's going on at work.","It's fine.",["(two seconds of silence)","…Fine?"],"Okay, cool. So what's your goal?","Silence gets more than another question. Repeat their one word as a question (Atefur)."],
+["Vague","GOAL","You asked about their goal.","I don't know.",["If you had to guess?"],"Would it be more like freedom, or more like money, or…?","Don't hand them options (Scott). Let them guess."],
+["Vague","CURRENT","He keeps saying freedom.","I just want freedom.",["Freedom from what?","What would that look like, day to day?"],"Freedom's great! So, how long have you been looking at trading?","Turn the vague word into something concrete."],
+["Vague","WHY NOW","You asked what made them reach out now.","I just saw the ad.",["Fair. And how long have you felt like [their word] about the job?","…So what's different now, compared to then?"],"Did anything happen recently?","Don't fish for a trigger. Pin the timeframe, then ask what's different now."],
+["Vague","WHY NOW","He said 'just now' when you asked when he decided.","Just now, I guess.",["When's 'just now'? … How long ago was that? … What shifted for you when you saw it?"],"Okay. So, the money side…","Atefur #5: pin the vague 'why now' down step by step."],
+["Vague","CURRENT","He says the job's going nowhere.","I'm still young, I want to see the world.",["What do you mean when you say you're still young?"],"That's great, travelling is amazing!","Scott: follow each new word once."],
+["Vague","URGENCY","Temp check.","Like a 5, I guess.",["How come only a 5?","…Is this something you actually want to change now, or something you'll keep pushing down the road?"],"Okay, 5 is good! So let's book you in.","6 or below: ask why, then challenge with a binary. Disqualify, or get a real number."],
+["Vague","URGENCY","After the challenge, he still doesn't care.","Honestly, I'm fine where I am.",["Is that what you're willing to settle for?","(if yes) Then honestly, I don't think booking you in makes sense. If that changes, give me a shout."],"But don't you want more for your family?!","Scott: no boxing match. They have to want it. An interest DQ is a fine outcome."],
+
+["Habits","CURRENT","They just said: 'Every video says something different, I don't know what to do.'","(You're about to sum it up.)",["What do you think it'd take for you to actually get there?"],"So you're more after the guidance, right?","Your habit #1. Make them say it. You get no points for knowing it."],
+["Habits","CURRENT","They said: 'I missed my best friend's wedding abroad.'","…so yeah, the business can't run without me.",["You missed your best friend's wedding. How did that feel?","(silence)"],"Okay. And with trading you'd have that freedom, right?","Your habit #3. That was the North Star, and you walked past it (K4 19:02). Slow down."],
+["Habits","CURRENT","You want to know how they feel about the job.","(You're about to ask.)",["How do you feel about the job?","(stop and wait)"],"Do you like it? Do you hate it?","Your habit #2. No options in discovery. Ask, then stop."],
+["Habits","MONEY","Kevin asks: 'So how much does the mentorship cost?'","How much does it usually cost?",["Honestly, it depends on what you need, and I don't know that yet. That's exactly what Jack's call is for. He'll go through all of it."],"Anywhere from three to seven grand.","Your habit #5 (K6 26:53). Never quote a price on a setting call."],
+["Habits","OPEN","You're about to ask your first question.","(Say it clean.)",["What got you interested in e-com in the first place?"],"So tell me, man, like, what, I guess, like, have you interested in starting to, wanting to do e-com?","Your habit #7 (K8 18:07). Five questions, learned by heart, no 'like, I guess'."],
+
+["Pushback","OPEN","First 10 seconds.","Is this a scam? No offence.",["None taken, honestly, that's a smart question. There's a lot of fake stuff out there. I'm not selling you anything on this call, I'm just seeing if it even makes sense for you. If it doesn't, I'll tell you straight."],"No no no, we're totally legit, we have hundreds of testimonials!","Agree with the worry. Defending yourself makes you sound less legit."],
+["Pushback","OPEN","First 10 seconds.","Is this a real person? Are you a bot?",["(laugh) Last I checked. Real guy, at a desk, with a coffee that's gone cold."],"Yes, I am a real person calling on behalf of…","Answer with a joke and a human detail."],
+["Pushback","CURRENT","Mid-call.","Wait, are you reading off a script?",["I've got notes, I'm not gonna lie, everybody does. But I'm not reading you a script. I'm actually trying to understand what's going on with you before I put you in front of someone."],"No, no, of course not!","Honesty beats denial. Then give the reason for the questions."],
+["Pushback","OPEN","They can't understand you.","Sorry, I can't understand you. Where are you from?",["(relaxed) Moldova. Next to Romania. Little country, good wine. I'll slow down, my bad. So you put an application in last night. What made you apply?"],"I'm so sorry, my English is not very good, I apologise…","One fun fact, slow down, straight back to the question. Most of the time it's their signal."],
+["Pushback","OPEN","First minute.","Before anything, how much is it?",["Straight to it, I respect that. Honestly, it depends on what you need, and I don't know that yet. That's what this call's for. If it's clearly not a fit, I'll tell you in five minutes."],"It's $5,000.","Answer honestly, give the reason, box the time, give an exit."],
+["Pushback","CURRENT","Second time.","Okay but seriously, is it hundreds or thousands?",["I can tell this is really bugging you. It's an investment, it's not a fifty-dollar course. But I don't want to throw a number at you with no context. Two more minutes, and if it's clearly not realistic, I'll say."],"Like I said, it depends.","Name their frustration. Give a little. Box the time."],
+["Pushback","MONEY","You asked what they make.","Why do you need to know that?",["Fair question. It's so I know what's realistic for you. Your goal's 2 grand a month, and I want to understand the gap from where you're at now."],"(long pause) Uh… it's just, um, part of the process.","Give the reason, calm and short. No stutter (Atefur)."],
+["Pushback","MONEY","Second, harder pushback on money.","That's not really your business, no offence.",["None taken, I get it. I'm not asking for the sake of it. If you go to a personal trainer to gain muscle, the first thing he asks is what you're working with. In trading it takes money to make money. Just a rough figure. What are you taking home?"],"Okay, sorry, we can skip it.","Don't back down, don't get defensive. Reason line, then ask again, smaller."],
+["Pushback","CURRENT","He says he doesn't need help.","I could build all of this myself in a weekend.",["I believe you, you're probably more technical than most people who download it. So what had you downloading it, if you could build it?"],"Well, actually, our program has a lot more than that…","Agree, then ask a question he can only answer with his real reason."],
+["Pushback","CURRENT","He says he already knows how to sell.","I've sold cars for ten years. What would you even teach me?",["Honestly? Probably not how to sell. Ten years on a lot is harder than most of what we do. So if you already know how to sell, what made you book?"],"Well, high-ticket is different from cars…","Give status, then flip it into his reason."],
+["Pushback","CURRENT","Already joined something else.","I already joined another guy's program.",["Nice, good for you for jumping in. How's it going, five months in?"],"Oh. Well, ours is better because…","Never trash another program. Curiosity lets them tell you the gap."],
+["Pushback","CURRENT","Tech sales offer.","Why would I pay to get a job? Jobs should pay me.",["Totally fair, and some people do get in free. Can I ask: since you started applying, how many interviews have the free applications got you?"],"Because our program is an investment in your future.","Let their own numbers answer the objection."],
+["Pushback","CURRENT","They want info, not a call.","Can you just email me the info?",["For sure. Honestly though, info without knowing where you're at is just a brochure. Give me five minutes and I'll know if it's even worth sending. If not, I'll tell you."],"Sure, what's your email? (and the call ends)","Agree, then give a reason, a time box and an exit."],
+["Pushback","MONEY","Credit repair.","Can you guarantee I'll be at 700?",["Straight up: no. Nobody honest can guarantee a score. If someone does, I'd run. What I can do is get you someone who'll tell you honestly what's possible and how long."],"Most of our clients see big increases!","A guarantee is a red flag, and it's legally risky. Honesty is how you pass the test."],
+["Pushback","CURRENT","He asks about YOU.","How much do you make? Have you even done this?",["(laugh) Straight in. Enough that I'm not looking for another job. And honestly, I'm still early. The guys who've been doing this a couple of years make a lot more than me, and the closers more again."],"I make six figures.","Don't brag, don't lie. You'll get respect for being honest."],
+
+["Money","MONEY","Capital offer (trading). After urgency.","(Start the money section.)",["Okay, let me ask a couple of questions on the money side, so I know where you're at. What are we looking to make from trading a year from now? … And how far are we from that right now, with your current income?"],"So how much money do you have?","Set it up, then the gap (Atefur #4)."],
+["Money","MONEY","Capital offer. Monthly savings.","(Ask how much they can save.)",["And you know how expenses are nowadays, the way the economy's going. How much are you actually able to put aside from that each month? … Is that a tight month, or your usual?"],"How much do you save?","'Because' psychology: a reason before the question makes people answer."],
+["Money","MONEY","Capital offer. Total saved, and they ask why.","Why does that matter?",["Yeah man, I'm sure you know in trading it takes money to make money, right? So how much would you say you've set aside in terms of capital?"],"Um, sorry, it's just a question we ask.","Your script line. Say it like it's normal, because it is."],
+["Money","MONEY","Program offer (high-ticket sales). No capital needed.","(Start money without saying 'capital'.)",["A big part of what we do is help people grow their income. If this worked, what would you want to be making a month? … And where are you at right now? … With how expensive everything is, how much are you able to put aside each month? … And in total?"],"It takes money to make money in sales, right?","For program offers, go through income. 'Capital' sounds weird when there's no business to fund."],
+["Money","MONEY","Program offer. Checking they can invest, without saying a price.","(Ask if they can invest.)",["And if [closer] finds the right fit for you, is investing in yourself something you'd be in a position to do right now, or is money genuinely tight?"],"Would you be willing to invest $5,000?","Binary on purpose: it's a challenge. No price."],
+["Money","MONEY","Health or dating offer.","(Ask about money.)",["What are you spending on the gym, supplements, all of that right now? … And what's coming in each month, roughly? … Are you able to put anything aside?"],"How much do you have saved for coaching?","Start with what they already spend."],
+["Money","SOFT QUAL","Student or unemployed, early in the call.","I'm at uni. I don't really work.",["Just so I don't waste your time, if you're looking at our coaching, it's a mid four-figure investment. Is that something that'd be viable for you right now, or is it completely out of the question?"],"Okay, so what are your goals?","Scott's transparent line. A fast DQ, or a fast green light."],
+["Money","MONEY","He offers his retirement money.","I've got $400K in my 401(k), money's not a problem.",["Frank, I appreciate you being open. But I'm going to stop you there, because I'd say this to my own dad: retirement money stays retirement money. You're 59. If anything went wrong, there's no time to rebuild it."],"Great! That's more than enough.","Right, legally safer, and the biggest trust moment on the call."],
+["Money","MONEY","Asking about credit.","(Ask about credit.)",["Some people prefer to spread things out rather than paying all at once. Have you got credit available, or would you rather keep it to savings?"],"(nervous) So, um, sorry, do you maybe have, like, credit cards?","Atefur: don't ask it 'like a cute girl at the bar'. Fewer words, no pause."],
+
+["Tension","OPEN","Old lead, angry.","Y'all keep calling me! This is the fifth one this week!",["Five in a week, I'd be pissed too. I'm only from Ray's team. If you want me to take you off right now, I'll do it, no problem."],"Sir, I'm just doing my job.","Agree with the anger. Offer the exit and mean it."],
+["Tension","OPEN","He calls back, rude.","Who the f*** is this?",["(calm) Hey, my bad, man. It's Stefan from Sam's team. You filled out a form yesterday about the shop's Instagram. I tried you once this morning. If now's bad, I'll leave you alone."],"Excuse me, there's no need for that language.","Stay calm, give the context, offer to go. He'll apologise himself."],
+["Tension","CURRENT","Her husband grabs the phone.","Is this one of those pyramid schemes?",["Great question, and honestly, I'm glad you're here. No, nobody recruits anybody. But don't just take my word for it. That's what the next call is for, and I'd want you on it."],"Sir, I was speaking with your wife.","Welcome the sceptical spouse. Give him a role."],
+["Tension","CURRENT","A couple starts arguing on speaker.","That's for the boiler and the car—",["Can I jump in for a sec? Honestly, you're both right. Something needs to change, and you can't risk money you need. Both are true. You don't have to solve it tonight. That's what the next call is for."],"(staying quiet and letting them argue)","Never pick a side. Hand it to the closer."],
+["Tension","CURRENT","She starts crying.","Sorry, I didn't think I'd get upset.",["(gently) Please don't apologize. Take your time. There's no rush at all."],"Oh, don't cry! It's going to be okay! So, anyway…","Say less, not more. Let her come back."],
+["Tension","CURRENT","Their energy is flat.","(short, bored answers)",["Sounds like I caught you at a busy one. You still good for five minutes, or should I call you after?"],"Are you always this excited, by the way?","Kevin #7 29:36. Name it kindly, never sarcastically."],
+["Tension","CURRENT","He argues for free YouTube.","I'll just use free videos.",["That's fair, there's a lot of good free stuff. So what's stopped the free stuff from working so far?"],"Do you think everyone watching free YouTube is a millionaire?","Kevin #7 30:26. Don't argue. Ask."],
+["Tension","CURRENT","He takes over the call with his own questions.","What's your success rate? Timeline? Do you run the ads? Do I need my own products?",["I love it, you've got a list. Can I make a suggestion? Every one of those, the coach can answer with real numbers. My job is to see in ten minutes if that call's worth your time. So let me ask a few, then I'll make sure all of yours get answered. Deal?"],"Okay, um, so, our success rate is…","Trade with the yapper. Take the frame back."],
+["Tension","WHY NOW","He lied about a no-show.","I was on the Zoom, nobody showed up!",["Oh okay. Did it say 'waiting for host', or did it just not load?"],"No you weren't, Kev was there for 15 minutes.","Give a soft way to correct the lie. Don't call it out."],
+
+["Booking","BOOK","Discovery's done.","(Pitch the call.)",["So from what you said: [situation], [impact in their words], [goal + what it means], and what you said you need is [roadblock in their words]. That's exactly what [owner]'s team helps with. Next step's a Zoom with [closer], one of our head coaches. He'll look at [their specific thing] and map out a plan. Does tomorrow afternoon work, or is Thursday better?"],"Cool, so I'll connect you with Jack, he'll get more in depth and build a roadmap.","Scott: recap in their words, bridge, value, two times. Generic pitches get no-shows."],
+["Booking","LOCK","Booked.","(Lock it in.)",["Sent. Can you check your email real quick and hit accept for me? … Anything that could come up and clash? … And if your [wife/husband] is part of the decision, they should be on it too."],"Great, see you then!","Accept on the call, clash check, partner on the call. That's how you lift show rate."],
+["Booking","LOCK","Spouse decides the money.","I'd have to talk to my wife.",["That makes total sense. Then honestly, she should be on the call with you, so she hears it straight and can ask her own questions, instead of you explaining it after. Would that work?"],"Okay, talk to her and call me back.","Get the decision maker on the call. Never 'call me back'."],
+["Booking","BOOK","Tight on money, nervous.","It's tight, but I'd want to hear what it is.",["That's fair. The next call will be honest about whether it's the right time. If it isn't, the coach will say so, and that's okay."],"Don't worry, there are payment plans!","Honesty is what gets tight-money prospects to show up."],
+["Booking","LOCK","Double no-show.","My bad, man. I know. Twice.",["Do you actually want to do this? If not, totally fine, I'll take you off. … Okay. Accept it now while we're on the phone, set an alarm for 15 minutes before, and if you get nervous, text me before, not after. Deal?"],"Please don't miss it this time.","Make the yes real. Then three small commitments."],
+
+["DQ","URGENCY","Happy at work, just clicked the ad, temp 3.","Honestly that sounds fine. Good, actually.",["Then I'll be straight with you: I don't think booking you in makes sense. You like your job, there's no rush. That's a great spot. If that changes, give me a shout."],"But what if you could make more?","Scott: protect the closer's calendar. An interest DQ."],
+["DQ","SOFT QUAL","Says high school.","I put 19 on the form, I'm actually 17.",["Appreciate you being honest, that's a good sign. We can't work with anyone under 18. It's a legal thing, with contracts and payments. But March isn't far. Can I check in after your birthday?"],"Can your parents sign for you?","Age is a hard line. Leave him better off."],
+["DQ","MONEY","$1,900 a month, two kids, $300 saved.","Honestly, no, some months I'm short.",["Thank you for being honest. I'm going to be straight with you, because you've been straight with me: with things this tight, I'd be doing you wrong booking you in. It's not 'no forever'. It's 'not like this, right now'."],"Have you thought about using a credit card?","Never push someone into debt. Give them free help instead."],
+["DQ","CURRENT","Fitness-coach bizopp.","I don't really care about the money, I just love fitness.",["Honestly, our program is about building the income side, and it's a real investment. If money's not the goal, you don't need us. Start coaching friends for free, post your training, and if it ever turns into 'I want this to replace my income', call me back."],"But imagine making 10K a month!","Scott: passion alone, go do it yourself."]
+];
+const CATS=["All",...new Set(D.map(d=>d[0]))];
+let cat="All",order=[],i=0,shown=false;
+let S={};try{S=JSON.parse(localStorage.getItem("drills")||"{}")}catch(e){S={}}
+const save=()=>{try{localStorage.setItem("drills",JSON.stringify(S))}catch(e){}};
+const $=id=>document.getElementById(id);
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function build(){order=shuffle(D.map((d,k)=>k).filter(k=>cat==="All"||D[k][0]===cat)).sort((a,b)=>(S[a]||0)-(S[b]||0));i=0;render()}
+function chips(){$("chips").innerHTML=CATS.map(c=>`<button class="chip${c===cat?" on":""}" data-c="${c}">${c}</button>`).join("");document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{cat=b.dataset.c;chips();build()})}
+function esc(s){return s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}
+function render(){
+  const pool=order.length;const k=order[i%pool];const d=D[k];shown=false;
+  $("stage").textContent=d[1].toLowerCase()===d[0].toLowerCase()?d[1]:d[1]+" · "+d[0];$("ctx").textContent=d[2];$("line").textContent="“"+d[3]+"”";
+  $("ans").className="ans";$("ans").innerHTML=`<h3>Say something like</h3>${d[4].map(x=>"<p>"+esc(x)+"</p>").join("")}<h3 class="no">Not this</h3><p>${esc(d[5])}</p><p class="why">${esc(d[6])}</p>`;
+  $("btns").innerHTML=`<button class="b p" id="rev">Reveal</button><button class="b" id="skip">Skip →</button>`;
+  $("rev").onclick=reveal;$("skip").onclick=next;
+  const inCat=D.filter((_,x)=>cat==="All"||D[x][0]===cat).length;
+  const done=D.filter((_,x)=>(cat==="All"||D[x][0]===cat)&&(S[x]||0)>=2).length;
+  $("count").textContent=`${inCat} cards in ${cat==="All"?"all categories":cat} · ${i+1} seen this session`;
+  $("score").textContent=`${done} of ${inCat} nailed twice or more`;
+  $("prog").style.width=(inCat?Math.round(done/inCat*100):0)+"%";
+}
+function reveal(){if(shown)return;shown=true;$("ans").className="ans show";$("btns").innerHTML=`<button class="b g" id="ok">Nailed it</button><button class="b r" id="again">Again</button>`;$("ok").onclick=()=>mark(1);$("again").onclick=()=>mark(-1)}
+function mark(v){const k=order[i%order.length];S[k]=Math.max(0,(S[k]||0)+v);save();if(v<0){order.splice(Math.min(order.length,i+4),0,k)}next()}
+function next(){i++;render()}
+document.addEventListener("keydown",e=>{if(e.key===" "){e.preventDefault();reveal()}else if(e.key==="1"&&shown)mark(1);else if(e.key==="2"&&shown)mark(-1);else if(e.key==="ArrowRight")next()});
+$("theme").onclick=()=>{const r=document.documentElement;const cur=r.getAttribute("data-theme");const dark=cur?cur==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.setAttribute("data-theme",dark?"light":"dark")};
+chips();build();
+</script>
+</body>
+</html>
