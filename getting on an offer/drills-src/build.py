@@ -10,12 +10,15 @@ Add cards to any deck file, run this script, and open drills.html.
 """
 import json
 import pathlib
+import subprocess
+import sys
 
 here = pathlib.Path(__file__).resolve().parent
+subprocess.run([sys.executable, str(here / "gen_punches.py")], check=True, cwd=here)
 decks = [
     ["deck1-core.json"],
     ["deck2a-phone-calls-1-50.json", "deck2b-phone-calls-2-001-050.json", "deck2c-phone-calls-2-051-100.json"],
-    ["deck3-new-scenarios.json"],
+    ["deck3-new-scenarios.json", "deck3b-new-scenarios-2.json", "deck3c-niche-punches.json"],
 ]
 
 data = []
