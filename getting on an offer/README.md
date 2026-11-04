@@ -8,7 +8,7 @@ Everyone's said the same thing: stop roleplaying and get on an offer. This folde
 | `02-loom-scripts.md` | Scott's Loom rules from the Syndicate call, your draft rewritten, three scripts (general, trading, program offers), a 5-slide deck, the 3-takes rule, and a volume target |
 | `03-interviews-and-vetting-offers.md` | Interview questions with strong answers, the live roleplay test, questions to ask *them* so you don't land on a dead offer, red flags, where to find offers, and a DM template |
 | `04-first-two-weeks-on-an-offer.md` | Days 1–2 prep, a daily routine, US time zones from Moldova, the numbers to track and what they mean, a closer note template, and reminders that cut no-shows |
-| `drills.html` | Open it in any browser, phone or laptop, offline. 65 cards: a prospect's line, you answer out loud, then reveal good answers and what not to say. Cards you miss come back sooner. |
+| `drills.html` | **On your phone:** https://claude.ai/artifact/5rhnkhdNt3ys769LBP5FhJ (private to you). Or download the file and open it in any browser, offline. 65 cards: a prospect's line, you answer out loud, then reveal good answers and what not to say. Cards you miss come back sooner. |
 | `applications-tracker.csv` | Open in Google Sheets or Excel. One row per application. |
 
 **This week's plan**
