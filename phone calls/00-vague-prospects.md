@@ -1,6 +1,6 @@
 # 00 · Vague prospects: "I just want to make more money"
 
-From the **JDS & Setter Syndicate** group call (4 Nov). You played a deliberately vague prospect for George. Scott broke down how to handle it, then finished the call himself. This file is that lesson, plus Scott's 7-step framework from the same call, because every call from 51 onwards uses it.
+From the **JDS & Setter Syndicate** group call (4 Nov). You played a deliberately vague prospect for George. Scott broke down how to handle it, then finished the call himself. This file is that lesson, plus Scott's 7-step framework from the same call. All 100 calls in `phone calls 2/` are built on it.
 
 ---
 

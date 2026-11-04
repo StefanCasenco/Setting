@@ -3,6 +3,8 @@
 50 full setting calls, phone only. From "Heyy… [name]?" to the booking (or a kind no).
 35 bizopp, 15 other. Each one has real-call mess in it: rambling, interruptions, pushback, tension. Each ends with **What to notice**: the lubricant lines, the frame-back moments and the defusing.
 
+**Newer batch:** `phone calls 2/` has 100 more calls built on Scott's course, the Syndicate call and Atefur #1–5. Start there if you're about to go live.
+
 **Start with `00-vague-prospects.md`.** It covers the George vs. Stefan roleplay and Scott's breakdown from the JDS & Setter Syndicate call, plus Scott's 7-step framework. It also has two corrections to the older calls: don't ask permission at the open, and don't hand prospects options by default.
 
 ```
