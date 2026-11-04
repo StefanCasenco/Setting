@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setter Drills</title>
+<style>
+:root{--bg:#f6f5f2;--card:#ffffff;--ink:#1d1d1f;--muted:#6b6b70;--line:#e3e1dc;--accent:#2f5bd3;--good:#1f8a4c;--bad:#b3261e;--chip:#eeece7;--warn:#9a6700}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121214;--card:#1c1c1f;--ink:#f1f1f3;--muted:#a0a0a8;--line:#2c2c31;--accent:#7c9bff;--good:#4cc27e;--bad:#ff7a70;--chip:#26262b;--warn:#e3b341}}
+:root[data-theme="dark"]{--bg:#121214;--card:#1c1c1f;--ink:#f1f1f3;--muted:#a0a0a8;--line:#2c2c31;--accent:#7c9bff;--good:#4cc27e;--bad:#ff7a70;--chip:#26262b;--warn:#e3b341}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:700px;margin:0 auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+h1{font-size:19px;margin:0}
+.muted{color:var(--muted);font-size:13px}
+.row{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.tab{flex:1;min-width:140px;text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:9px 11px;cursor:pointer;font-size:14px}
+.tab b{display:block;font-size:14px}
+.tab span{font-size:12px;color:var(--muted)}
+.tab.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-height:280px}
+.meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.stage{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-weight:600}
+.src{font-size:12px;color:var(--muted)}
+.ctx{font-size:13px;color:var(--muted);margin:6px 0 12px}
+.line{font-size:21px;line-height:1.35;font-weight:600;margin:6px 0 14px}
+.say{font-size:14px;color:var(--muted);margin-bottom:10px}
+.ans{display:none;border-top:1px solid var(--line);padding-top:12px;margin-top:6px}
+.ans.show{display:block}
+.ans h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:10px 0 6px;color:var(--good)}
+.ans h3.no{color:var(--bad)}
+.ans p{margin:4px 0 8px}
+.why{font-size:13px;color:var(--muted)}
+.btns{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+button.b{flex:1;min-width:110px;border:0;border-radius:10px;padding:12px;font-size:15px;font-weight:600;cursor:pointer;background:var(--chip);color:var(--ink)}
+button.p{background:var(--accent);color:#fff}
+button.g{background:var(--good);color:#fff}
+button.r{background:var(--bad);color:#fff}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 4px}
+.bar>i{display:block;height:100%;background:var(--good);width:0}
+.tools{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:4px 0 10px}
+.tog,.small{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer}
+.small.on{border-color:var(--warn);color:var(--warn)}
+.result h2{margin:0 0 6px;font-size:22px}
+.result li{margin:6px 0}
+footer{margin-top:16px;font-size:12px;color:var(--muted)}
+kbd{border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div><h1>Setter Drills</h1><div class="muted" id="count"></div></div>
+  <button class="tog" id="theme" aria-label="Toggle theme">◐ Theme</button>
+</header>
+<div class="row" id="decks"></div>
+<div class="row" id="chips"></div>
+<div class="tools">
+  <div class="muted" id="score"></div>
+  <div style="display:flex;gap:6px">
+    <button class="small" id="exam">20-card check</button>
+    <button class="small" id="reset">Reset progress</button>
+  </div>
+</div>
+<div class="bar"><i id="prog"></i></div>
+<div class="card" id="card"></div>
+<footer>Say every answer <b>out loud</b> before you reveal. Keys: <kbd>Space</kbd> reveal · <kbd>1</kbd> nailed it · <kbd>2</kbd> again · <kbd>→</kbd> skip. Progress is saved in this browser only. Built from Scott's course, the Syndicate call, Atefur #1–5, your Kevin roleplays, and the 150 calls in the repo.</footer>
+</div>
+<script>
+const DECKS=/*__DATA__*/;
+const DNAME=["Check 1 · Core","Check 2 · The 150 calls","Check 3 · New scenarios"];
+const DSUB=["The original deck: Scott, Atefur, your habits","One card from every roleplay in GitHub","Situations not in any call yet"];
+const D=[];DECKS.forEach((deck,di)=>deck.forEach((c,ci)=>D.push({id:"d"+(di+1)+"-"+ci,deck:di,cat:c[0],stage:c[1],ctx:c[2],line:c[3],good:c[4],dont:c[5],why:c[6],src:c[7]||"new"})));
+let deck=-1,cat="All",order=[],i=0,shown=false,exam=null;
+let S={};try{S=JSON.parse(localStorage.getItem("drills2")||"{}")}catch(e){S={}}
+const save=()=>{try{localStorage.setItem("drills2",JSON.stringify(S))}catch(e){}};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const inDeck=c=>deck<0||c.deck===deck;
+const pool=()=>D.filter(c=>inDeck(c)&&(cat==="All"||c.cat===cat));
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
+function decks(){
+  const tabs=[{k:-1,n:"Mix all",s:D.length+" cards, everything"}].concat(DNAME.map((n,k)=>({k,n,s:DECKS[k].length+" cards · "+DSUB[k]})));
+  $("decks").innerHTML=tabs.map(t=>`<button class="tab${t.k===deck?" on":""}" data-k="${t.k}"><b>${t.n}</b><span>${t.s}</span></button>`).join("");
+  document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{deck=+b.dataset.k;cat="All";exam=null;decks();chips();build()});
+}
+function chips(){
+  const cats=["All",...new Set(D.filter(inDeck).map(c=>c.cat))];
+  $("chips").innerHTML=cats.map(c=>`<button class="chip${c===cat?" on":""}" data-c="${c}">${c}</button>`).join("");
+  document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{cat=b.dataset.c;exam=null;chips();build()});
+}
+function build(){const p=pool();order=shuffle(p.map(c=>c.id)).sort((a,b)=>(S[a]||0)-(S[b]||0));if(exam){order=shuffle(p.map(c=>c.id)).slice(0,20);exam={ok:0,miss:[],n:order.length}}i=0;render()}
+function stats(){
+  const p=pool();const done=p.filter(c=>(S[c.id]||0)>=2).length;
+  $("count").textContent=`${p.length} cards · ${deck<0?"all checks":DNAME[deck]}${cat==="All"?"":" · "+cat}`;
+  $("score").textContent=exam?`20-card check: ${i}/${exam.n} · ${exam.ok} nailed`:`${done} of ${p.length} nailed twice or more`;
+  $("prog").style.width=(exam?Math.round(i/exam.n*100):(p.length?Math.round(done/p.length*100):0))+"%";
+  $("exam").classList.toggle("on",!!exam);$("exam").textContent=exam?"Stop check":"20-card check";
+}
+function cardById(id){return D.find(c=>c.id===id)}
+function render(){
+  stats();
+  if(exam&&i>=exam.n){return result()}
+  if(!order.length){$("card").innerHTML="<p>No cards here.</p>";return}
+  const c=cardById(order[i%order.length]);shown=false;
+  $("card").innerHTML=`<div class="meta"><div class="stage">${esc(c.stage)} · ${esc(c.cat)}</div><div class="src">${esc(c.src==="core"?"Check 1":c.src==="new"?"Check 3 · new":"Check 2 · "+c.src)}</div></div>
+  <div class="ctx">${esc(c.ctx)}</div><div class="line">“${esc(c.line)}”</div>
+  <div class="say">Say your answer <b>out loud</b> before you reveal.</div>
+  <div class="ans" id="ans"><h3>Say something like</h3>${c.good.map(x=>"<p>"+esc(x)+"</p>").join("")}<h3 class="no">Not this</h3><p>${esc(c.dont)}</p><p class="why">${esc(c.why)}</p></div>
+  <div class="btns" id="btns"><button class="b p" id="rev">Reveal</button><button class="b" id="skip">Skip →</button></div>`;
+  $("rev").onclick=reveal;$("skip").onclick=()=>{if(exam){exam.miss.push(c.id)}next()};
+}
+function reveal(){if(shown)return;shown=true;$("ans").className="ans show";$("btns").innerHTML=`<button class="b g" id="ok">Nailed it</button><button class="b r" id="again">Again</button>`;$("ok").onclick=()=>mark(1);$("again").onclick=()=>mark(-1)}
+function mark(v){const id=order[i%order.length];S[id]=Math.max(0,(S[id]||0)+v);save();if(exam){if(v>0)exam.ok++;else exam.miss.push(id)}else if(v<0){order.splice(Math.min(order.length,i+4),0,id)}next()}
+function next(){i++;render()}
+function result(){
+  const pct=Math.round(exam.ok/exam.n*100);
+  const verdict=pct>=85?"Ready for live calls on this set.":pct>=65?"Close. Drill the misses below, then run another check.":"Not yet. Go back to practice mode on this set.";
+  $("card").innerHTML=`<div class="result"><h2>${exam.ok} / ${exam.n} · ${pct}%</h2><p>${verdict}</p>${exam.miss.length?"<p class='muted'>Missed:</p><ul>"+exam.miss.map(id=>{const c=cardById(id);return "<li><b>“"+esc(c.line)+"”</b><br><span class='muted'>"+esc(c.good[0])+"</span></li>"}).join("")+"</ul>":"<p>No misses.</p>"}
+  <div class="btns"><button class="b p" id="again2">Run another check</button><button class="b" id="back">Back to practice</button></div></div>`;
+  $("again2").onclick=()=>{exam={};build()};$("back").onclick=()=>{exam=null;build()};
+}
+$("exam").onclick=()=>{exam=exam?null:{};build()};
+$("reset").onclick=()=>{if(confirm("Reset all saved progress on this device?")){S={};save();build()}};
+document.addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key===" "){e.preventDefault();reveal()}else if(e.key==="1"&&shown)mark(1);else if(e.key==="2"&&shown)mark(-1);else if(e.key==="ArrowRight"&&!shown)next()});
+$("theme").onclick=()=>{const r=document.documentElement;const cur=r.getAttribute("data-theme");const dark=cur?cur==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.setAttribute("data-theme",dark?"light":"dark")};
+decks();chips();build();
+</script>
+</body>
+</html>
